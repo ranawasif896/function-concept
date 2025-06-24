@@ -7,6 +7,8 @@ float fun(float value){
     return value*0.01;
 }
 
+
+
 int main()
 {
 float petrol=0,electricty=0,gas=0;
