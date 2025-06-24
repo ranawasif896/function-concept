@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+
+
+float fun(float value){
+    return value*0.01;
+}
+
+int main()
+{
+float petrol=0,electricty=0,gas=0;
+int option;
+cout<<"Show manus"<<endl;
+cout<<"1.Petrol";
+cout<<"2.Electricty bill"<<endl;
+cout<<"3.gas bill"<<endl;
+cout<<"Enter your option where you need::"<<endl;
+cin>>option;
+switch(option)
+{
+ case 1:
+ cout<<"ENter your petrol in liter";
+ cin>>petrol;
+ cout<<"Petrol rate is"<<fun(petrol);
+ break;
+ case 2:
+ cout<<"Enter your electricty rate per unit::";
+ cin>>electricty;
+ cout<<"10% ka essab sa total electricty bill etna bana ha ap ka::"<<fun(electricty);
+ break;
+ case 3:
+ cout<<"ENter your gas rate ::";
+ cin>>gas;
+ cout<<"10% ka essab sa total electricty bill etna bana ha ap ka::"<<fun(gas);
+ break;
+}
+
+
+
+return 0;
+
+}
